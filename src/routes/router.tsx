@@ -1,10 +1,17 @@
 import {createBrowserRouter} from "react-router-dom";
-import Place from '../Place.tsx';
+import Layout from "../layout";
+import Placeholder from "../pages/placeholder";
 
 const router = createBrowserRouter([
     {
         path: "/",
-        element: <Place />
+        element: <Layout />,
+        children: [
+            {
+                path: "/",
+                element: <Placeholder />
+            }
+        ]
     }
 ]);
 
