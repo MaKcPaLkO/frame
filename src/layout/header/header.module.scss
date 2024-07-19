@@ -1,0 +1,12 @@
+@import "../../variables.scss";
+
+.header {
+    background: $darkBlue;
+    color: #fff;
+    padding: 12px 0;
+
+    &_wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+}
